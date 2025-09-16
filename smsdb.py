@@ -3,7 +3,7 @@ from tkinter import messagebox
 def connect_database():
     global myCursor, con
     try:
-        con = pymysql.connect(host='localhost', user='root', password='Admin_12345')
+        con = pymysql.connect(host='localhost', user='root', password='12345')
         myCursor = con.cursor()
         myCursor.execute('CREATE DATABASE IF NOT EXISTS student_data')
         myCursor.execute('USE student_data')
